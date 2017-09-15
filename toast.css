@@ -1,0 +1,29 @@
+.lx-toast{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 1000;
+    padding: 15px;
+    transition: opacity .3s linear;
+    font-size:26px;
+}
+.lx-toast.lx-toast-center{
+    top:50%;
+    bottom:inherit;
+}
+.toast-text {
+    font-size: 28px;
+    display: block;
+    text-align: center;
+}
+
+.toast-enter,
+.toast-leave-active {
+    opacity: 0;
+}
