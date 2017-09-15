@@ -3,9 +3,9 @@
 
 # how to use it
 #### javascript:  
-import Vue from 'vue'
-import '@/vue-slide-up-toast/toast.css'
-import toast from '@/vue-slide-up-toast'
+import Vue from 'vue'  
+import '@/vue-slide-up-toast/toast.css'  
+import toast from '@/vue-slide-up-toast'  
 Vue.use(toast)  
 
 #### template:
