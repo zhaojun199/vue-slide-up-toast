@@ -1,7 +1,8 @@
 .lx-toast{
     position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
     max-width: 80%;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.7);
@@ -14,7 +15,7 @@
     font-size:26px;
 }
 .lx-toast.lx-toast-center{
-    top:50%;
+    top:75%;
     bottom:inherit;
 }
 .toast-text {
@@ -22,8 +23,18 @@
     display: block;
     text-align: center;
 }
-
+.toast-enter-active {
+    animation: slide-up .5s cubic-bezier(0.25, 0.62, 0.41, 0.97);
+}
 .toast-enter,
 .toast-leave-active {
     opacity: 0;
+}
+@keyframes slide-up{
+    from {
+        transform: translateY(150%);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
